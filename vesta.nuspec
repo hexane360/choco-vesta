@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>vesta</id>
+    <version>3.5.7</version>
+    <packageSourceUrl>https://github.com/hexane360/choco-vesta</packageSourceUrl>
+    <owners>hexane360</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>vesta</title>
+    <authors>Koichi Momma and Fujio Izumi</authors>
+    <projectUrl>https://jp-minerals.org/vesta/en/</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/hexane360/choco-vesta/master/vesta.png</iconUrl>
+    <copyright>2006-2021, Koichi Momma and Fujio Izumi</copyright>
+    <licenseUrl>https://jp-minerals.org/vesta/en/download.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
+    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>vesta visualization 3d molecule chemistry dft</tags>
+    <summary>A 3D visualization program for crystals and molecules.</summary>
+    <description>
+      VESTA is a 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.
+      VESTA supports a wide range of input and output formats, and aims to be fast and responsive.
+
+      Read more about VESTA at the [official site](https://jp-minerals.org/vesta/en/download.html), or in the [original paper](http://scripts.iucr.org/cgi-bin/paper?S0021889811038970).
+
+      # License
+
+      This software is released under a noncommercial license, with two caveats:
+        - Drawings produced by VESTA that end up in publications must be explicitly acknowledged.
+        - Redistribution of files is prohibited without explicit written permission.
+      For more information, see the official [license page](https://jp-minerals.org/vesta/en/download.html).
+
+      This package is not affiliated with the authors of VESTA.
+
+      # Installation Options
+
+      Specify installation options using `choco install --params '/param1 /param2'`. Available parameters:
+        - `/NoStart`: Don't install start menu shortcut. By default, a start menu shortcut is installed.
+        - `/UserStart`: Install to user start menu instead of system start menu.
+        - `/FileAssoc`: Associate VESTA with some of the most common file formats (.vesta, .cif, .pdb, .xyz, ...). By default no associations are made.
+    </description>
+
+    <!-- =============================== -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.10.8" />
+    </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
